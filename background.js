@@ -12,4 +12,18 @@ function toggle(){
 }
 
 chrome.browserAction.onClicked.addListener(toggle);
+
+if(state){
+console.log("sup");
+chrome.webRequest.onBeforeRequest.addListener(
+    function() {
+        return {cancel: true};
+    },
+    {
+        urls: ["*://youtube.com/*"]
+    },
+    ["blocking"]
+);
+}
+
 //toggle();

@@ -8,12 +8,18 @@
 			"128" : "concentrate_ON.png"
 		},
 	"background": {
-			"scripts" :["background.js"]
+			"scripts" :["background.js"],
+			"persistent" : true
 	},
 	"options_page" : "options.html",
 	"browser_action": {
 		"default_title": "Concentrate",
 		"default_icon": "concentrate_logo.png"
-	}
-
+	},
+	"permissions": [
+		"storage",
+		"webRequest",
+		"*://*/*",
+		"webRequestBlocking"
+	]
 }
