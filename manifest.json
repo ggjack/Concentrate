@@ -10,7 +10,7 @@
 	"background": {
 			"scripts" :["background.js"]
 	},
-
+	"options_page" : "options.html",
 	"browser_action": {
 		"default_title": "Concentrate",
 		"default_icon": "concentrate_logo.png"
