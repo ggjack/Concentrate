@@ -2,19 +2,18 @@
 	"name": "Concentrate",
 	"version": "1.0",
 	"manifest_version": 2,
-	"description": "Prevents distractions"
-	"icons" : {"48": "imgs/concentration_logo.png",
-		   "128": "imgs/concentration_ON.png"}
+	"description": "Prevents distractions",
+	"icons" : {
+			"48" : "concentrate_logo.png",
+			"128" : "concentrate_ON.png"
+		},
 	"background": {
-			"scripts" :{"background.js"}
-	}
+			"scripts" :["background.js"]
+	},
 
 	"browser_action": {
 		"default_title": "Concentrate",
-		"default_icon": "imgs/concentration_logo.png"
-	}
-	"permissions": {
-
+		"default_icon": "concentrate_logo.png"
 	}
 
 }
