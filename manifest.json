@@ -8,7 +8,7 @@
 			"128" : "concentrate_ON.png"
 		},
 	"background": {
-			"scripts" :["background.js"],
+			"scripts" :["background.js", "storage.js", "list.js"],
 			"persistent" : true
 	},
 	"options_page" : "options.html",

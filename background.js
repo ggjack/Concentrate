@@ -23,7 +23,33 @@ function(e){
 		}
 	 },
    {
-       urls: ["*://*/*"]
+       urls: ["*://www.facebook.com/*",
+		"*://www.youtube.com/*",
+                 "*://www.reddit.com/*",
+                 "*://www.crunchyroll.com/*",
+                 "*://www.dailymotion.com/*",
+                 "*://www.amazon.com/*",
+                 "*://www.amazon.ca/*",
+                 "*://www.newegg.com/*",
+                 "*://www.newegg.ca/*",
+                 "*://www.ebay.com/*",
+                 "*://www.ebay.ca/*",
+                 "*://www.mangahen.com/*",
+                 "*://www.myanimelist.net/*",
+                 "*://www.tetrisfriends.com/*",
+                 "*://www.nhl.com/*",
+                 "*://www.nba.com/*",
+                 "*://www.atpworldtour.com/*",
+		 "*://www.lolking.net/*",
+		 "*://www.twitter.com/*",
+		 "*://www.twitch.tv/*",
+		 "*://www.dramafever.com/*",
+		 "*://www.kissanime.to/*",
+		 "*://www.atpworldtour.com/*",
+		 "http://www.surrenderat20.net/*",
+		 "*://www.atpworldtour.com/*",
+		 "*://www.leagueoflegends.com/*",
+		 "http://store.steampowered.com/*"]
 },
    ["blocking"]
 
