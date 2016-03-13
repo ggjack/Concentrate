@@ -7,23 +7,25 @@ function toggle(){
 	}
 	else{
 		chrome.browserAction.setIcon({path: "concentrate_logo.png"});
-
 	}
+	console.log("swag");
 }
 
 chrome.browserAction.onClicked.addListener(toggle);
 
-if(state){
-console.log("sup");
-chrome.webRequest.onBeforeRequest.addListener(
-    function() {
-        return {cancel: true};
-    },
-    {
-        urls: ["*://youtube.com/*"]
-    },
-    ["blocking"]
-);
-}
 
-//toggle();
+chrome.webRequest.onBeforeRequest.addListener(
+function(e){
+	if(state){return{
+        redirectUrl : chrome.extension.getURL("redirect.html")
+	 };}
+	else{ return;
+		}
+	 },
+   {
+       urls: ["*://*/*"]
+},
+   ["blocking"]
+
+);
+
