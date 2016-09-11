@@ -49,7 +49,8 @@ function(e){
 		 "http://www.surrenderat20.net/*",
 		 "*://www.atpworldtour.com/*",
 		 "*://www.leagueoflegends.com/*",
-		 "http://store.steampowered.com/*"]
+		 "http://store.steampowered.com/*",
+		 "*://www.netflix.com/*"]
 },
    ["blocking"]
 

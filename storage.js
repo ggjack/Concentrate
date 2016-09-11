@@ -13,9 +13,10 @@ function rm(){
 	var myArray=[];
 	var selected=ocument.getElementById("Distraction List").value;
 	chrome.storage.sync.get("myKey",function(n){
-		for(i=0;i<n['myKey'].length;i++){
+		var Array=n['myKey'];
+		for(i=0;i<Array.length;i++){
 			if(n[i]!=selected){	
-				myArray.push(n['myKey'][i]);
+				myArray.push(Array[i]);
 			}	
 		}
 	});

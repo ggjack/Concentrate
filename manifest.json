@@ -2,7 +2,7 @@
 	"name": "Concentrate",
 	"version": "1.0",
 	"manifest_version": 2,
-	"description": "Prevents distractions",
+	"description": "Prevents users from entering distracting websites.",
 	"icons" : {
 			"48" : "concentrate_logo.png",
 			"128" : "concentrate_ON.png"
